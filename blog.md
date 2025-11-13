@@ -13,3 +13,9 @@ My main question was: *Which categories of videos are trending on YouTube and ho
 To answer this, I decided to collect the most popular videos in the US using the YouTube Data API. I focused on the US to simplfy and narrow down the data, but the same method could work for other countries.  
 
 ---
+## Ethics
+
+I used the YouTube Data API v3 which is publicly available and allows developers to get video statistics without violating YouTube’s terms of service. I created an API key through my Google account, which was free. I kept it private by storing it in a `.env` file. I made sure not to scrape any web pages directly because YouTube’s terms of service does not allow scraping from their website. Using the official API is the safest and most reliable way to get this data. The API has a request limit of 50 so I made sure to only request 50 at a time. I only requested the total of what I needed for the project (200 videos) and added a small delay between requests to avoid hitting limits or overwhelming the server.
+
+---
+
