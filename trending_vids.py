@@ -46,3 +46,6 @@ def get_trending_videos(region="US", total_results=200):
         time.sleep(1)
 
     return pd.DataFrame(videos)
+
+df = get_trending_videos(region="US", total_results=200)
+df.to_csv("data/youtube_trending_US.csv", index=False)
